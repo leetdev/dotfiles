@@ -1,0 +1,29 @@
+[user]
+	email = renx81@gmail.com
+	name = Rene Aavik
+	gpgSign = true
+[credential "https://github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+#[credential]
+#	helper = /usr/lib/git-core/git-credential-libsecret
+[pull]
+	rebase = true
+#[url "git@github.com:"]
+  #insteadOf = https://github.com/
+[init]
+	defaultBranch = main
+[tag]
+	gpgSign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gpg]
+	program = gpg
+[rerere]
+	enabled = true
