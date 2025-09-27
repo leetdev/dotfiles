@@ -24,6 +24,8 @@
 	process = git-lfs filter-process
 	required = true
 [gpg]
-	program = gpg
+	program = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe
 [rerere]
 	enabled = true
+[commit]
+	gpgsign = true
